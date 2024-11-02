@@ -7,7 +7,8 @@ namespace Labb_2___Arv
         static void Main(string[] args)
         {
             Console.WriteLine("Zoo i Björketorp: ");
-            //string name, int age, string species, string gender, string diet
+            
+            // Create a new horse
             Horse horse = new Horse()
             {
                 Name = "Giggan",
@@ -18,16 +19,28 @@ namespace Labb_2___Arv
                 Speed = 50
             };
 
+            //// Create a new animal with default values.
+            //Animal animal = new Animal();
+            //animal.OutPutInfo();
+            //// Create a new horse with default values;
+            //Horse horse2 = new Horse();
+            //horse2.OutPutInfo();
+            //// Create a  new shetland with default values;
+            //Shetland shetland2 = new Shetland();
+            //shetland2.OutPutInfo();
+
+            // Show the information and actions by that horse created.
             horse.OutPutInfo();
             horse.Eat();
             horse.Sleep();
             horse.Galopp();
             horse.MakeSound();
-
+            
+            
             Console.WriteLine("");
             Console.ReadKey();
             Console.Clear();
-
+            // Create a wildhorse
             WildHorse wildhorse = new WildHorse()
             {
                 Name = "Spirit",
@@ -38,7 +51,7 @@ namespace Labb_2___Arv
                 Speed = 60
 
             };
-
+            // Show the informations and actions by that wildhorse created.
             wildhorse.OutPutInfo();
             wildhorse.Eat();
             wildhorse.NotDomesticated();
@@ -49,7 +62,27 @@ namespace Labb_2___Arv
             Console.WriteLine("");
             Console.ReadKey();
             Console.Clear();
-            //string name, int age, string species, string gender, string diet, string breed
+
+            Shetland shetland = new Shetland()
+            {
+                Name = "Sigge",
+                Age = 8,
+                Species = "häst",
+                Gender = "valack",
+                Diet = "växtätare",
+
+            };
+            shetland.OutPutInfo();
+            shetland.Eat();
+            shetland.Sleep();
+            shetland.Galopp();
+            shetland.MakeSound();
+
+            Console.WriteLine("");
+            Console.ReadKey();
+            Console.Clear();
+
+           
             Dog dog = new Dog()
             {
                 Name = "Göran",
@@ -87,7 +120,6 @@ namespace Labb_2___Arv
             Console.ReadKey();
             Console.Clear();
 
-            // string name, int age, string species, string gender, string diet, string colour
 
             Cat cat = new Cat()
             {
